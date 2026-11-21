@@ -12,9 +12,11 @@ from torch import nn
 from torch.utils.data import Dataset, DataLoader
 
 
-# Paths and settings
-DATA_DIR = Path(r"C:\Users\yvsre\Desktop\CV_Project\Dataset")
-OUTPUT_DIR = Path(r"C:\Users\yvsre\Desktop\CV_Project\work")
+# Resolve project paths from this file so they work on Windows and Linux
+# (including Streamlit Community Cloud).
+PROJECT_DIR = Path(__file__).resolve().parent
+DATA_DIR = PROJECT_DIR / "Dataset"
+OUTPUT_DIR = PROJECT_DIR / "work"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 IMAGE_SIZE = 256

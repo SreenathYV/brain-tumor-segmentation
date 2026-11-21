@@ -10,8 +10,9 @@ import matplotlib
 matplotlib.use("Agg")  # non-interactive backend; saves the image without opening a plot window
 import matplotlib.pyplot as plt
 
-DATA_DIR = Path(r"C:\Users\yvsre\Desktop\CV_Project\Dataset")
-OUTPUT_DIR = Path(r"C:\Users\yvsre\Desktop\CV_Project\work")
+PROJECT_DIR = Path(__file__).resolve().parent
+DATA_DIR = PROJECT_DIR / "Dataset"
+OUTPUT_DIR = PROJECT_DIR / "work"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 # Read only the training shards. Keep the separate test shard untouched.
