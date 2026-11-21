@@ -1,0 +1,6 @@
+﻿streamlit
+numpy
+pyarrow
+Pillow
+matplotlib
+torch

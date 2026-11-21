@@ -1,0 +1,21 @@
+# Python generated files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Dataset files are downloaded separately and must not be committed
+Dataset/
+*.parquet
+
+# Local outputs: keep only the checkpoint required by the demo app
+work/*
+!work/
+!work/unet_20_epochs.pt
+
+# Local Streamlit secrets
+.streamlit/secrets.toml
+
+# Generated preview from local dataset
+sample_preview.png
